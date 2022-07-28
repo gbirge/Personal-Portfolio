@@ -1,0 +1,139 @@
+:root {
+    --bodyBackground: #D48166;
+    --HeaderBack: #373A36;
+    --textcolor:  #E6E2DD;
+}
+
+a {
+    color: antiquewhite;
+}
+
+#header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: var(--textcolor);
+    background-color: var(--bodyBackground);
+    padding: 8px 20px;
+    display: inline-block;
+    justify-content: center;
+    
+}
+
+nav {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--textcolor);
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--HeaderBack);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px 20px;
+   
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+#body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--textcolor);
+    margin: 0;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 20px;
+    
+}
+
+#about, #contact {
+    background-color: var(--bodyBackground);
+}
+
+#me {
+   max-width: 130px;
+   max-height: 130px;
+   padding: 30px 10px;
+   background-color: #E6E2DD;
+   display: flex;
+   justify-content: center;
+   border:  solid #373A36;
+   
+}
+
+div p {
+    float: left;
+    margin-left: 25px; 
+    height: 100px;
+    width: 300px;
+    
+}
+
+
+
+#project1 {
+    max-width: 800px;
+    display: block;
+    float: right;
+    padding-right: 250px;
+    margin-bottom: 20px;
+}
+
+#project2 {
+    width: 600px;
+    height: 300px;
+    display: block;
+    float: right;
+    padding-right: 250px;
+    margin-bottom: 20px;
+}
+
+#projdescr {
+    float: left;
+    margin-left: 25px;
+    height: 100px;
+    width: 300px;
+    background-color: var(--HeaderBack);
+}
+
+#projects {
+    background-color: var(--HeaderBack);
+}
+
+h2, h3 {
+    margin-left: 20px;
+}
+
+h2 {
+    text-decoration-line: underline;
+}
+
+@media all and (max-width: 992px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  img {
+    display: block; margin-left: 100px;
+  }
+
+}
+
+@media all and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        display: inline-block;
+    }
+}
