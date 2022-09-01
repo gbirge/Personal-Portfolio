@@ -41,7 +41,7 @@ nav ul li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--textcolor);
     margin: 0;
-    
+    background-color: var(--HeaderBack);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -72,7 +72,10 @@ div p {
     
 }
 
+#myproject1 #project2body #myprojects {
+    background-color: var(--HeaderBack);
 
+}
 
 #project1 {
     max-width: 800px;
@@ -80,6 +83,8 @@ div p {
     float: right;
     padding-right: 250px;
     margin-bottom: 20px;
+    padding-bottom: 60px;
+    background-color: var(--HeaderBack);
 }
 
 #project2 {
@@ -88,19 +93,48 @@ div p {
     display: block;
     float: right;
     padding-right: 250px;
-    margin-bottom: 20px;
+    padding-bottom: 60px;
+    background-color: var(--HeaderBack);
 }
 
-#projdescr {
+#repoLink {
+    margin-left: 20px;
+    background-color: var(--HeaderBack);
+}
+
+#repoLinkBack {
+    background-color: var(--HeaderBack);
+    padding-bottom: 20px;
+    margin: 0px;
+}
+
+#projdescr1 {
+    float: left;
+    margin-left: 25px;
+    height: 200px;
+    width: 300px;
+    background-color: var(--HeaderBack);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+#projdescr2 {
     float: left;
     margin-left: 25px;
     height: 100px;
     width: 300px;
     background-color: var(--HeaderBack);
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
-#projects {
+#project1body {
     background-color: var(--HeaderBack);
+}
+
+#proj2body {
+    background-color: var(--HeaderBack);
+    margin-bottom: 0px;
 }
 
 h2, h3 {
@@ -111,10 +145,19 @@ h2 {
     text-decoration-line: underline;
 }
 
+h3 {
+font-size: 25px;
+}
+
 @media screen and (max-width: 992px) {
   body {
     display: flex;
     flex-wrap: wrap;
+    
+  }
+
+  #projects {
+    font-size: 20px;
   }
 
   nav {
